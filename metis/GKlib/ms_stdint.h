@@ -33,6 +33,7 @@
 #error "Use this header only with Microsoft Visual C++ compilers!"
 #endif // _MSC_VER ]
 
+#if (_MSC_VER < 1700) // [
 #ifndef _MSC_STDINT_H_ // [
 #define _MSC_STDINT_H_
 
@@ -218,5 +219,6 @@ typedef uint64_t  uintmax_t;
 
 #endif // __STDC_CONSTANT_MACROS ]
 
-
 #endif // _MSC_STDINT_H_ ]
+#endif // _MSC_VER 1700 ]
+
